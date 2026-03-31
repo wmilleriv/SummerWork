@@ -1,6 +1,6 @@
 \documentclass{article}
 \usepackage{amsmath}
-\usepackage{geometry}
+\usepackage[margin=1.5cm]{geometry}
 \usepackage{pgfplots}
 \pgfplotsset{width=10cm,compat=1.9}
 \begin{document}
@@ -140,40 +140,58 @@
 
 \bigskip
 
-\section{Domain and Range}
-\section{Additive Equations}
-\section{Additive Inequalities}
-\section{Multiplicative Equations}
-\section{Multiplicative Inequalities}
-\section{Two-Step Equations}
-\section{Two-Step Inequalities}
-\section{Plotting Points}
-\section{Slope-Intercept Form}
-\section{Standard Form}
 
 
 \section{Plotting Points}
-
-\end{document}
-
-    samples=6, % Total points (10-0+1)
-    % Use 'only marks' for dots
-    \addplot [only marks, mark=*] {sin(deg(x))};
-\end{axis}
-\end{tikzpicture}
+\textbf{Plot and label the following points}
 
 \bigskip
 
+\begin{tikzpicture}
+	\begin{axis}[width=0.8\linewidth,
+		axis lines=middle, 
+		grid=both, ymin=-10, ymax=10,
+		%ytick=({-10,-9,...,10},
+		minor tick num=1,
+		minor tick style={draw=none},
+		xmin=-10, xmax=10,
+		%xtick={-10,-9,...,10},
+		xticklabel={ },
+		%xticklabel style={rotate=45,anchor=north east}
+		]
+		\addplot[draw=none] coordinates{(1,1)};
+	\end{axis}
+\end{tikzpicture}
+
 \section{Domain and Range}
 \section{Additive Equations}
 \textbf{Solve for the given variable}
+
+\bigskip
+
 \(\begin{aligned}
 	&x+4=10 \qquad\qquad 6-y=-4 \qquad\qquad 13+z=9 \qquad\qquad 9.7+x=12.3 \qquad\qquad -x-800=97\\\\
-	&y+\frac{3}{5}=1 \qquad\qquad -\frac{7}{3}-z=\frac{11}{3} \qquad\qquad x+\frac{2}{5}=\frac{1}{4}\\\\
+	&y+\frac{3}{5}=1 \qquad\qquad -\frac{7}{3}-z=\frac{11}{3} \qquad\qquad x+\frac{2}{5}=\frac{1}{4} \qquad\qquad  x+3\frac{1}{5}=15\frac{1}{2} \qquad\qquad \frac{8}{5}-x=1\frac{3}{5}\\\
 \end{aligned}\)
 \section{Additive Inequalities}
 \textbf{Solve for the given variable}
+
+\bigskip
+
+\(\begin{aligned}
+	&x-3>9 \qquad\qquad 4<x-1 \qquad\qquad -1\ge-11+x \qquad\qquad -20\ge10x \qquad\qquad x-\frac{1}{2} <0\\\\
+\end{aligned}\)
+
 \section{Multiplicative Equations}
+\textbf{Solve for the given variable}
+
+\bigskip
+
+\(\begin{aligned}
+	&-50=10b \qquad\qquad 8n=-48 \qquad\qquad 60=-12w \qquad\qquad  12x=9 \qquad\qquad -15=-9s\\\\
+	&-7=4x \qquad\qquad 10=4x \qquad\qquad \frac{x}{-7}=9 \qquad\qquad -6=\frac{n}{9} \qquad\qquad \frac{-s}{8}=-1 \qquad\qquad -\frac{4}{3}y=-6\\\\
+\end{aligned}\)
+
 \section{Multiplicative Inequalities}
 \section{Two-Step Equations}
 \section{Two-Step Inequalities}
@@ -181,8 +199,6 @@
 \section{Slope-Intercept Form}
 \section{Standard Form}
 
-
-\section{Plotting Points}
 
 \end{document}
 

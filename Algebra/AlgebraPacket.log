@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.19)  26 MAR 2026 20:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.31)  31 MAR 2026 13:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -570,15 +570,15 @@ LaTeX Font Info:    ... okay on input line 6.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(92.14519pt, 430.00462pt, 92.14519pt)
-* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
+* h-part:(L,W,R)=(42.67912pt, 528.93675pt, 42.67912pt)
+* v-part:(T,H,B)=(42.67912pt, 709.61174pt, 42.67912pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=430.00462pt
-* \textheight=556.47656pt
-* \oddsidemargin=19.8752pt
-* \evensidemargin=19.8752pt
-* \topmargin=-13.87262pt
+* \textwidth=528.93675pt
+* \textheight=709.61174pt
+* \oddsidemargin=-29.59087pt
+* \evensidemargin=-29.59087pt
+* \topmargin=-66.59087pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -632,20 +632,20 @@ L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 23522 strings out of 476182
- 617418 string characters out of 5795595
- 1937975 words of memory out of 5000000
- 45192 multiletter control sequences out of 15000+600000
+ 23576 strings out of 476106
+ 618690 string characters out of 5793933
+ 1942975 words of memory out of 5000000
+ 45255 multiletter control sequences out of 15000+600000
  559436 words of font info for 41 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 99i,8n,107p,744b,2062s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 59 hyphenation exceptions out of 8191
+ 99i,9n,107p,744b,2062s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on AlgebraPacket.pdf (3 pages, 78675 bytes).
+Output written on AlgebraPacket.pdf (3 pages, 82998 bytes).
 PDF statistics:
  47 PDF objects out of 1000 (max. 8388607)
  29 compressed objects within 1 object stream
