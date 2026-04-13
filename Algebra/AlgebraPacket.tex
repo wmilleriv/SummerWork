@@ -2,14 +2,18 @@
 \usepackage{amsmath}
 \usepackage[margin=1.5cm]{geometry}
 \usepackage{pgfplots}
-\pgfplotsset{width=10cm,compat=1.9}
-\begin{document}
+\pgfplotsset{width=10cm,compat=1.18}
 
+\begin{document}
 \begin{center}
-	\title{Algebra Basics}
+	{\huge \textbf{Part 2: Algebra Basics}}
+
+	Calculators are allowed in this section.
 \end{center}
 
+\bigskip
 \section{Percent Increase}
+\bigskip
 \textbf{Calculate the final price of the given item}
 
 \bigskip
@@ -20,6 +24,7 @@
 \end{aligned}\)
 
 \section{Percent Decrease}
+\bigskip
 \textbf{Calculate the final price of the item}
 
 \bigskip
@@ -30,6 +35,7 @@
 \end{aligned}\)
 
 \section{percent Change}
+\bigskip
 \textbf{Calculate the percent change and indicate whether it was an increase or decrease}
 
 \bigskip
@@ -41,6 +47,7 @@
 \end{aligned}\)
 
 \section{Simple Interest}
+\bigskip
 \textbf{Find the total cost of the item including interest}
 
 \bigskip
@@ -51,6 +58,7 @@
 \end{aligned}\)
 
 \section{Functions}
+\bigskip
 \textbf{Evaluate the functions for the given inputs}
 \bigskip
 
@@ -62,10 +70,11 @@
 \end{aligned}\)
 
 \section{The Vertical Line Test}
+\bigskip
 \textbf{Declare whether or not the given plot is a function}
 
 \bigskip
-
+\qquad\qquad\qquad
 \begin{tikzpicture}
 \begin{axis}[
     xmin=-4,xmax=4,
@@ -80,7 +89,7 @@
 	\addplot[domain=0:2*pi, samples=100, thick, red] ({cos(deg(x))}, {sin(deg(x))});
 \end{axis}
 \end{tikzpicture}
-\qquad\qquad
+\qquad\qquad\qquad\qquad
 \begin{tikzpicture}[
   declare function={
     func(\x)= (\x<=-2) * (\x*\x + 6*\x + 8)   +
@@ -99,12 +108,14 @@
 	clip=false,
 ]
 
-	\addplot[red,domain=-5:5]{func(x)};
+	\addplot[<->,red,domain=-5:5]{func(x)};
 \end{axis}
 \end{tikzpicture}
 
 \bigskip
 
+\bigskip
+\qquad\qquad\qquad
 \begin{tikzpicture}
 \begin{axis}[
   axis x line=middle, axis y line=middle,
@@ -115,12 +126,11 @@
 	ticks=none,
 	clip=false,
 ]
-\qquad\qquad
 	\addplot[style={latex-latex}, red] coordinates {(1,-5) (1,5)};
 	%\addplot{x=2};
 \end{axis}
 \end{tikzpicture} 
-\qquad\qquad
+\qquad\qquad\qquad\qquad
 \begin{tikzpicture}
 \begin{axis}[
     samples=6, % Total points (10-0+1)
@@ -132,17 +142,56 @@
 	ticks=none,
 	clip=false,
 ]
-    ]
     % Use 'only marks' for dots
     \addplot [only marks, mark=*, red] {sin(deg(x))};
 \end{axis}
 \end{tikzpicture}
 
+
 \bigskip
 
+\bigskip
 
+\bigskip
+\qquad\qquad\qquad
+\begin{tikzpicture}
+\begin{axis}[
+  axis x line=middle, axis y line=middle,
+    axis line style={latex-latex},
+  ymin=-5, ymax=5, 
+  xmin=-5, xmax=5,
+	width=150,
+	ticks=none,
+	clip=false,
+]
+	\addplot[style={latex-latex}, red] coordinates {(-5,-2) (5,-2)};
+	%\addplot{x=2};
+\end{axis}
+\end{tikzpicture} 
+\qquad\qquad\qquad\qquad
+\begin{tikzpicture}
+\begin{axis}[
+  axis x line=middle, axis y line=middle,
+    axis line style={latex-latex},
+  ymin=-5, ymax=5, 
+  xmin=-5, xmax=5,
+	width=150,
+	ticks=none,
+	clip=false,
+]
+    % Use 'only marks' for dots
+	\addplot [->,domain=0:5, red] {sqrt(x)};
+\end{axis}
+\end{tikzpicture}
+
+\bigskip
+
+\bigskip
+
+\bigskip
 
 \section{Plotting Points}
+\bigskip
 \textbf{Plot and label the following points}
 
 \bigskip
@@ -166,8 +215,12 @@ A(3,2) \qquad\qquad B(-4,1) \qquad\qquad C(0,5) \qquad\qquad D(-3,0) \qquad\qqua
 	\end{axis}
 \end{tikzpicture}
 
+\bigskip
+
+
 %\section{Domain and Range}
 \section{Additive Equations}
+\bigskip
 \textbf{Solve for the given variable}
 
 \bigskip
@@ -180,6 +233,7 @@ A(3,2) \qquad\qquad B(-4,1) \qquad\qquad C(0,5) \qquad\qquad D(-3,0) \qquad\qqua
 \bigskip
 
 \section{Additive Inequalities}
+\bigskip
 \textbf{Solve for the given variable}
 
 \bigskip
@@ -192,6 +246,7 @@ A(3,2) \qquad\qquad B(-4,1) \qquad\qquad C(0,5) \qquad\qquad D(-3,0) \qquad\qqua
 \bigskip
 
 \section{Multiplicative Equations}
+\bigskip
 \textbf{Solve for the given variable}
 
 \bigskip
@@ -205,6 +260,7 @@ A(3,2) \qquad\qquad B(-4,1) \qquad\qquad C(0,5) \qquad\qquad D(-3,0) \qquad\qqua
 \bigskip
 
 \section{Multiplicative Inequalities}
+\bigskip
 \textbf{Solve for the given variable}
 
 \bigskip
@@ -218,6 +274,7 @@ A(3,2) \qquad\qquad B(-4,1) \qquad\qquad C(0,5) \qquad\qquad D(-3,0) \qquad\qqua
 \bigskip
 
 \section{Multi-Step Equations}
+\bigskip
 \textbf{Solve for the given variable}
 
 \bigskip
@@ -235,6 +292,7 @@ A(3,2) \qquad\qquad B(-4,1) \qquad\qquad C(0,5) \qquad\qquad D(-3,0) \qquad\qqua
 
 
 \section{Multi-Step Inequalities}
+\bigskip
 \textbf{Solve for the given variable}
 
 \bigskip
@@ -253,7 +311,9 @@ A(3,2) \qquad\qquad B(-4,1) \qquad\qquad C(0,5) \qquad\qquad D(-3,0) \qquad\qqua
 
 \bigskip
 
+\newpage
 \section{Slope-Intercept Form}
+\bigskip
 \textbf{Graph and label the following lines}
 
 \bigskip
@@ -285,6 +345,7 @@ A(3,2) \qquad\qquad B(-4,1) \qquad\qquad C(0,5) \qquad\qquad D(-3,0) \qquad\qqua
 %\section{Domain and Range}
 
 \section{Standard Form}
+\bigskip
 \textbf{Graph and label the following lines}
 
 \bigskip
