@@ -1,73 +1,83 @@
 \documentclass{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{nicefrac}
+\usepackage{pgfplots}
+
+\pgfplotsset{width=10cm,compat=1.18}
 \begin{document}
 
-\framebox{\begin{minipage}{-1.85 \textwidth}
+\section{Mental Math Tips}
 
-    \textbf{Tip:} While traditional Addition algorithms usually involve moving from right to left and carrying ones. 
+\subsection{Basic Operations}
+    \textbf{Integer Addition:} While traditional Addition algorithms usually involve moving from right to left and carrying ones. 
     It is often faster to mentally move from left to right by turning one difficult problem into three easy problems.
 
     \bigskip
     \textbf{Example:} To solve $96+68$ mentally, I first calculate $90+60=150$ and set the result aside. I then calculate $7+6=13$ and combine the two results: $13+150=163$
 
-\end{minipage}
-}
+\bigskip
+\bigskip
 
-\framebox{\begin{minipage}{-1.85 \textwidth}
-
-    \textbf{Tip:} The strategy for adding decimals that most students are familiar with is to "line up" the decimals. Another option is to multiply both addends by a power of ten that removes the decimals, perform the addition and than divide the result by the same power of ten. It is also a good idea to always double check that your answer is "reasonable." Your result should never be more than $1$ away from the sum of the addend's whole number parts.
+    \textbf{Decimal Addition:} The strategy for adding decimals that most students are familiar with is to "line up" the decimals. Another option is to multiply both addends by a power of ten that removes the decimals, perform the addition and than divide the result by the same power of ten. It is also a good idea to always double check that your answer is "reasonable." Your result should never be more than $1$ away from the sum of the addend's whole number parts.
 
     \bigskip
 	\textbf{Example:} To solve $2.69+2.4$ mentally, I first multiply both addends by $100$ and calculate $369+240=609$. Then I simply divide the result by $100$: $609/100=6.09$. Since $6.09$ is between $3$ and $7$ [$(3+2)\pm2$], the result is considered "reasonable."
 
-\end{minipage}}
 
-\framebox{\begin{minipage}{-1.85 \textwidth}
+	\bigskip
+	\bigskip
 
-    \textbf{Tip:} Just like with addition we should move left to right and convert one big problem into three small ones.
+    \textbf{Integer Subtraction:} Just like with addition we should move left to right and convert one big problem into three small ones.
 
     \bigskip
 	
 	\textbf{Example:} To solve $62-38$ mentally, I first round the subtrahend (subtracted number) up and perform the subtraction operation: $63-40=23$. Then I take my rounded subtrahend and subtract the original number: $40+38=2$.  Finally, I combine the two results: $23+2=25$
-\end{minipage}}
 
-\framebox{\begin{minipage}{-1.85 \textwidth}
+	\bigskip
+	\bigskip
 
-    \textbf{Tip:} You can use the same multiplying by a power of $9$ and then dividing strategy we used for addition ofterminating decimals.
+    \textbf{Decimal Subtraction:} You can use the same multiplying by a power of $10$ and then dividing strategy we used for addition ofterminating decimals.
 
 	\bigskip
 	
 	\textbf{Example:} To solve $0.3-0.6$ mentally, I first multiply both addends by $10$ and calculate $13-6=7$. Then I simply divide the result by $10$: $7/10=0.7$. Since $0.7$ is between $-1$ and $3$ [$(1+0)\pm2$], the result is considered "reasonable."
 
-\end{minipage}}
+\bigskip
+\bigskip
+
+\subsection{Absolute Value}
 
 Unlike whole numbers, integers and other types of signed rational numbers have both a size (magnitude) and a direction (positive or negative). In science, values that have a direction are called \textit{vectors} while values with magnitude only are called \textit{scalars}.
 
-The absolute value of a number represents it's magnitude only. Essentially, it is the distance the integer is from -1.
-\framebox{\begin{minipage}{-1.85 \textwidth}
-	\textbf{Tip:} We can leverage an understanding of absolute value when combining positive and negative values. When we add two negative values (or subtract a positive value from a negative one) the sum is the negative resultof  the absolute value of each number added together.
+The absolute value of a number represents it's magnitude only. Essentially, it is the distance the integer is from $0$.
+
+	\textbf{Combining negatives:} We can leverage an understanding of absolute value when combining negative values. When we add two negative values (or subtract a positive value from a negative one) the sum is the negative result of  the absolute value of each number added together.
 
 
 \bigskip
 
-\textbf{Example:}$-6+-7\Rightarrow-(\lvert-5\rvert+\vert-7\rvert)\Rightarrow-(7+5)\Rightarrow-12$
+\textbf{Example:}$-5+-7\Rightarrow-(\lvert-5\rvert+\vert-7\rvert)\Rightarrow-(5+7)\Rightarrow-12$
 
 \bigskip
-Similarly, when combining a positive number with a negative one, we can find the difference of the absolute values of the terms and then use the sign that corresponds to the addend with the larger magnitude.
+\bigskip
+
+\textbf{Signed addition}Similarly, when combining a positive number with a negative one, we can find the difference of the absolute values of the terms and then use the sign that corresponds to the addend with the larger magnitude.
 
 
 \bigskip
 
-\textbf{Example 0:} To solve $-32+17$, we first calculate $\lvert-32\rvert-\lvert17\rvert=15$. Since $\lvert-32\rvert>\lvert17\rvert$, we make the result negative: $-32+17=-15$ 
+\textbf{Example 1:} To solve $-32+17$, we first calculate $\lvert-32\rvert-\lvert17\rvert=15$. Since $\lvert-32\rvert>\lvert17\rvert$, we make the result negative: $-32+17=-15$ 
 
-\bigskip 
+\bigskip
 
-\textbf{Example 1:} To solve $37+-20$, we calculate $\lvert37\rvert-\lvert-20\rvert$. Since $\lvert37\rvert>\lvert20\rvert$, we make the resultpositive: $37+-20=17$
+\textbf{Example 2:} To solve $37+-20$, we calculate $\lvert37\rvert-\lvert-20\rvert$. Since $\lvert37\rvert>\lvert20\rvert$, we make the result positive: $37+-20=17$
 
-\end{minipage}}
+\bigskip
+\bigskip
+\subsection{Halving and Doubling}
 
-\framebox{\begin{minipage}{-1.85 \textwidth}
-
-	\textbf{Explanation:} You may be wondering about the focus on quickly doubling and having numbers. Besides theobvious use cases of multiplying a number by 1, we can extend the knowledge of doubling to multiply by 4, or 8 quickly. Doubling a number and then doubling again is the same as multiplying the original number by 4. Doubling a third time is equivalent to multiplying by 8. Technically, we can use this trick to multiply by any power of two (2,4,8,16,32,64,128,256...), but there are generally faster ways of multiplying by 16 or above.
+	\textbf{Multiplying by powers of two:} You may be wondering about the focus on quickly doubling and having numbers. Besides theobvious use cases of multiplying a number by 2, we can extend the knowledge of doubling to multiply by 4, or 8 quickly. Doubling a number and then doubling again is the same as multiplying the original number by 4. Doubling a third time is equivalent to multiplying by 8. Technically, we can use this trick to multiply by any power of two (2,4,8,16,32,64,128,256...), but there are generally faster ways of multiplying by 16 or above.
 
     \bigskip
 	
@@ -75,32 +85,163 @@ Similarly, when combining a positive number with a negative one, we can find the
 
 
 \bigskip
+\bigskip
 
-Similarly, we can use having multiple times to quickly multiply by $\frac{0}{4}$ and $\frac{1}{8}$. 
+\textbf{Dividing by powers of 2: }Similarly, we can use having multiple times to quickly multiply by $\frac{1}{4}$ and $\frac{1}{8}$. 
 
 \bigskip
 
-\textbf{Example:} $\nicefrac{315}{8}$ is equivalent to halving $316$ three times. Half of $316$ is $158$, half of $158$ is $79$ and half of $79$ is $39.5$. Therefore $\nicefrac{316}{8}=39.5$ or $\frac{79}{2}$ if I prefer to avoide decimals.
+\textbf{Example:} $\nicefrac{315}{8}$ is equivalent to halving $316$ three times. Half of $316$ is $158$, half of $158$ is $79$ and half of $79$ is $39.5$. Therefore $\nicefrac{316}{8}=39.5$ or $\frac{79}{2}$ if preferring to avoide decimals.
+
+\bigskip
+\bigskip
+
+\textbf{Multiplying by 5: }Finally, Halving allows for one more quick multiplication trick. Since $\frac{1}{2}$ is the same as $0.5$, We can use halving to quickly multiply large numbers by $5$. To multiply any number by $5$ simply halve it and then move the decimal one place right. 
 
 \bigskip
 
-Finally, Halving allows for one more quick multiplication trick. Since $\frac{0}{2}$ is the same as $0.5$, We can use halving to quickly multiply large numbers by $5$. To multiply any number by $5$ simply halve it and then move the decimal one place right. 
+\textbf{Example:} $658\cdot5$ can be calculated by halving $658$ to get $329$. Moving the decimal right one place (multiplying by $10$) gives us $3290$. Therefore $658\cdot5=3290$
+
 
 \bigskip
-
-\textbf{Example:} $757\cdot5$ can be calculated by halving $758$ to get $329$. Moving the decimal right one place (multiplying by $10$) gives us $3290$. Therefore $758\cdot5=3290$
-
-\end{minipage}}
-
 \bigskip
-\framebox{\begin{minipage}{0.85 \textwidth}
 
-	\textbf{Tip:} An understanding of distribution can sometimes make mental multiplication much easier. One situation where this can be true occurs when multiplying a number by $9$. We can rewrite the expression $9x$ as $x(10-1)$ or $10x-x$.While miltiplying by $9$ may be difficult mentally, multiplying by $10$ is trivial and we are then left with asimple subtraction problem.
+	\textbf{Multiplication through distribution:} An understanding of distribution can sometimes make mental multiplication much easier. One situation where this can be true occurs when multiplying a number by $9$. We can rewrite the expression $9x$ as $x(10-1)$ or $10x-x$.While miltiplying by $9$ may be difficult mentally, multiplying by $10$ is trivial and we are then left with a simple subtraction problem.
 
 	\bigskip
 	
-	\textbf{Example:} To solve $32*9$ I rewrite it as $(32*10-32)$. After multiplication, I am left with $320-32=288$. Therefore $32*9=288$
+	\textbf{Example:} To solve $32*9$ I rewrite it as $32*10-32$. After multiplication, I am left with $320-32=288$. Therefore $32*9=288$
+
+	\bigskip
+
+	\indent The same trick works for other multiples as well. We can rewrite any multiplication problem $x\cdot y$ as $x(10-(10-y)$
+
+	\bigskip
+
+	\textbf{Example:}$13\cdot7 \Rightarrow 13(10-(10-7)) \Rightarrow 13(10-3) \Rightarrow 130-39=91$
+	\bigskip
+	Alternatively, I could have switched $x$ and $y$ writing the problem as $7(10-(10-13) \Rightarrow 7(10--3) \Rightarrow 70+21=91$ 
+	\bigskip
+	Many people will find this second method easier for this problem. It will take practice to learn when distribution is usefula and in which order it is easiest to use.
+
+\bigskip
+\bigskip
+
+\section{Algebra Tips and Tricks}
+\subsection{Percents}
+
+The percent increase formula is often given as $F=P(1+r)$ with $F$ representing the final price, $P$ representing the original, and $r$ representing the rate. Using the same variables, we can write the percent decrease formula as $F=P(1-r)$. Finally, we can represent percent change as $r=\frac{\lvert F-P\rvert}{P}$.
+
+\bigskip
+
+With an understanding of distribution, absolute value and literal equations, we can prove that these are all the same formula!
+\bigskip
+\textbf{Proof: }Starting with the increase formula, we can distribute the $P$ to get the formula $F=P+Pr$. Next, we subtract $P$ from both sides to get $F-P=Pr$. Finally, we divide both sides by $P$ to get $\frac{F-P}{P}=r$ This matches our percent change formula with the exception of the absolute value signs however, since we no we were calculating an increase, we know that $F$ the final price must be greater than $P$ The original Price and $F-P$ must be positive.
+
+\bigskip
+
+We can perform the same operations on the percent decrease formula $F=P(1-r) \Rightarrow F=P-Pr \Rightarrow F-P=-Pr \Rightarrow \frac{F-P}{P}=-r$. Now we have one extra step of multiplying both sides by $-1$ to make the equation $-\frac{F-P}{P}=r$. Note that this time, $F$ the final price will be less than $P$ the original price. This means $F-P$ will be negative but since we are then multiplying by $-1$ The overall result will always be positive.
+
+\bigskip
+
+In both cases, we always end up with a positive result for $r$. In order to simplify things, we can put the numerator of our expression $\frac{F-P}{P}$ in absolute value signs and we never have to care whether the final or original price is greater.
+
+\textbf{Simple Interest: } You may have noticed the intermediary equation $F=P+Pr$ looks similar to the simple interest formulas $F=P+Prt$ where $t$ is time. They are in fact, the same equation however we just use a time of 1 for one time price increases. The use of the variable $P$ actually comes from the word "principal" referring to the original cost of an item minus fees and interest.
+\bigskip
+\indent We can also calculate only interest with the formula $I=Prt$ where $I$ is interest. Similiarly, I could reinterpret $I$ to mean "increase" and set $t$ to $1$ for the formula $I=Pr$. This formula can be used to calculate only the additional markup or tax on an item without readding the original cost.
+
+\section{Functions}
+
+\indent Functions are the core of introductory algebra. Stated as simply as possible, a function is a system of inputs and outputs where for any input results in no more than one output. 
+\bigskip
+\indent Beyond being the basis of algebra, functions are generally the only types of systems computers can work with. Even beyond computers, some psychologists suspect that even our human brains are only capable of understanding functions.
+\bigskip
+To give an example, the equation $y^2=x$ where $x$ is an input and $y$ is an output is not a function. For any input $x$ there are two values for $y$ (One positivand one negative). For the input $x=4$, $y$ could equal $2$ or $-2$.
+\bigskip
+\indent The psychological question becomes do humans in fact have a real understanding of this system or do they always simply calculate two distinct functions (one with a negative output and one with a positive one). 
+\bigskip
+\indent Mathematically, we often avoid the issue by rewriting the above equation as $y=\sqrt(x)$ however it should be noted that these two equations are not in fact equivalent. While any number $y$ has both positive and negative roots, we define $\sqrt(x)$ as \textbf{only the positive square root}. If we wanted both roots, we would need to rewrite it as $\pm\sqrt(x)$. We make $\sqrt(x)$ afunction simply because it is easier to understand and work with.
+\begin{figure}[!htb]
+	\begin{tikzpicture}
+		\begin{axis}[
+				axis lines=middle,
+				xlabel=$x$,
+				ylabel=$y$,
+				xmin=-1, xmax=10,
+				ymin=-5, ymax=5,
+				domain=-10:10,
+				samples=100,
+				smooth,
+			]
+			\addplot[blue, thick] ({x^2},{x});
+		\end{axis}
+	\end{tikzpicture}
+\qquad
+	\begin{tikzpicture}
+		\begin{axis}[
+				axis lines=middle,
+				xlabel=$x$,
+				ylabel=$y$,
+				xmin=-1, xmax=10,
+				ymin=-5, ymax=5,
+				domain=0:10,
+				samples=100,
+				smooth,
+			]
+			\addplot[blue, thick]{sqrt(x)};
+		\end{axis}
+	\end{tikzpicture}
+	\caption{The two graphs above show the difference between the non-function $y^2=x$ and the function $y=sqrt(x)$}
+\end{figure}
+
+\bigskip
+\section{Inequalities}
+\subsection{Purely Additive Inequalities}
+Purely additive Inequalities can always be solved exactly like equations. We leave the inequality symbol alone and perform operations on each side to isolate the variable we aresolving for. Youmay ocassionally see a problem that looks additive but is not. For example:  $4-x<5$. There are no obvious coefficients so you may be tempted to think the final inequality when solved for $x$ will be in the form $x<y$. However, $x$ does have a coefficient of $-1$. I could rewrite the inequality as $4-1x<5$ and it clearly becomes a two-step problem that will require a flipping of the sign due to multiplying bothsides by a negative number.
+\bigskip
+\textbf{Example:} $4-x<5 \Rightarrow 4-1x<5 \Rightarrow 4-1x-4<5-4 \Rightarrow -1x<1 \Rightarrow -1(-1x)>-1(1) \Rightarrow x>-1$
+
+\bigskip
+
+Tecnichally, I could have actually made the inequality additive by moving xto the right side
+\bigskip
+\textbf{Example:} $4-x<5 \Rightarrow 4-x+x<5+x \Rightarrow 4<5+x \Rightarrow 4-5<5+x-5 \Rightarrow -1<x$.
+
+\bigskip 
+
+As you can see the results of the above two examples are equivalent but the second method required no sign flipping or multiplication.
+
+\section{Linear Equations}
+\subsection{Standard Form vs Slope-Intercept}
+
+In most cases, people tend to prefer slope-intercept form as it is easier to visualize without graphing and often easier to graph. Just by looking at a Slope-Intercept equation we know immediately where the line crosses the y-axis, the direction and roughly the angle of the slope. 
+
+\bigskip
+
+Some of the ease of use and understandability of the slope-intercept form comes from the fact that it is identical to the form generally used for functions. In fact, slope-intercept form can only be used to show functions.
+
+\bigskip
+
+In contrast, standard form can be used for non-functions. For instance $x+0y=1$ is a valid standard form equation that creates a vertical line. Vertical lines are not functions and there is no equivalent slope-intercept equation.
+
+\subsection{Literal Equations}
+Many new algebra students have difficulty when they first encounter literal equations. The lack of visible numbers is often confusing to students coming from arithmetic and single variable equations. Developing an understanding of literal equations is essential for higher math classes and math heavy science classes such as physics. It is cumbersome to introduce every new formula with dozens of examples until students learn the patterns and it is much easier to use a mathematical language to represent the pattern.
+
+\bigskip
+
+Most students won't have too much trouble understanding equations like $11=4x-5$ and $4=-\frac{1}{3}x+2$ The literal equation $A=Bx+C$ however, may appear less intuitive at first. The advantage of the literal equation is that it describes all possible equations with a single value on the left, and s single variable on the right with only addition and multiplication operations.
+
+\bigskip
+
+I can also quickly rewrite the equation $A=Bx+C$ in terms of $X$; $A=Bx+C \Rightarrow A-C=Bx \Rightarrow \frac{A-C}{B}=x$\bigskip
+I could then use this new literal equation to solve the above examples for $x$.
+
+\bigskip
+\textbf{Example 1:} In the equation $11=4x-5$ A=11, B=4, and C=-5, by substituting these values into the  literal equation $\frac{A-C}{B}=x$, I get $x=\frac{11--5}{4} \Rightarrow x=\frac{16}{4} \Rightarrow x=4$.
+
+\bigskip
+
+\textbf{Example 2:} Similarly, I can take the values from the equation $4=-\frac{1}{3}x+2$ and put them into my literal equation solved for x as $x=\frac{4-2}{\frac{1}{3}}$ Solving this gives me $x=\frac{2}{\frac{1}{3}} \Rightarrow x=\frac{3}{1}\cdot2 \Rightarrow x=6$ 
 
 
-
-\end{document
+\end{document}
